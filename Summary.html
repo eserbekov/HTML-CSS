@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="SummaryCSS.css">
+    <title>HTML</title>
+</head>
+<body>
+    <p><strong>Html</strong> - hypertext markup language - язык гипертекстовой разметки</p>
+    <hr>
+    <span class ="tag">
+        <p>
+            &lt;<strong>h1&gt; - &lt;h6</strong>&gt; - заголовок <br>
+            &lt;<strong>p</strong>&gt; - параграф <br>
+            &lt;<strong>blockquote</strong>&gt; - цитата <br>
+        <br>
+            <strong>&lt;b&gt;</strong> - <b>жирный текст (bold)</b> <br>
+            <strong>&lt;i&gt;</strong> - <i>курсив (italic)</i> <br>
+            <strong>&lt;del&gt;</strong> - <del>зачеркнутый текст</del> <br>
+            <strong>&lt;sub&gt;</strong> - | <sub>текст снизу (нижний индекс)</sub> <br>
+            <strong>&lt;sup&gt;</strong> - | <sup>текст сверху (верхний индекс)</sup> <br>
+        <br>
+            <strong>&lt;div&gt;</strong> - блочный контейнер <br>
+            <strong>&lt;span&gt;</strong> - строчный контейнер <br>
+        <br>
+            <strong>&lt;br&gt;</strong> - перенос строки <br>
+            <strong>&lt;hr&gt;</strong> - вставляет разделительную линию (горизонтальную)
+
+        </p>
+    </span>
+
+        <h4>Списки</h4>
+        <p>ненумерованный список</p>
+
+        <div>
+        <ul>
+            <li>Один</li>
+            <li>Два</li>
+            <li>Три</li>
+        </ul>
+        </div>
+
+    <p>нумерованный список</p>
+        <div>
+        <ol>
+            <li>Один</li>
+            <li>Два</li>
+            <li>Три</li>
+        </ol>
+        </div>
+
+    <p>список внутри списка</p>
+        <div>
+        <ul>
+        <li>Один</li>
+        <li>Два</li>
+        <li><ol>
+                <li>Три</li>
+                <li>Четыре</li>
+            </ol>
+        </li>
+        </ul>
+        </div>
+    <h4>Аргументы тегов</h4>
+    <span>&lt;div&gt; class="MyClass">&lt;/div&gt;</span> <br>
+        в данном примере class - это аргумент, а "MyClass" - это значение аргумента
+
+    <p>Аргументы</p>
+    <ul>
+        <li>
+            class - устанавливает класс для элемента
+        </li>
+        <li>
+            id - устанавливает id для элемента
+        </li>
+        <li>
+            href - (для тега a) устанавливает ссылку
+        </li>
+    </ul>
+    <hr>
+    <p><strong>CSS</strong> - cascading style sheets - каскадные таблицы стилей</p>
+    <p>Внутри тега style - можно писать CSS стили для документа</p>
+    <p>
+        <div class ="style">
+            &lt;style&gt; <br>
+            /*<br>
+            <blockquote> Стили </blockquote>
+            */<br>
+            &lt;/style&gt;
+        </div>
+        <span class="link">
+            <p>подключение в html отдельным файлом<br></p>
+                <br>
+                <div>&lt;!-- Внутри тега head --&gt;<br>
+                &lt;link rel="stylesheet" href="style.css"&gt;
+                </div>
+            <p></p>
+
+        </span>
+        <span class="Selector">
+            <p><strong>Селектор</strong> - выражение которое указывает к какой группе элементов указываются стили</p>
+        <span class="example">
+                <strong>пример:</strong><br>
+                body - для всего тега body<br>
+                p - для всех тегов p<br>
+                .MyClass - для всех элементов с классом "MyClass"<br>
+                #MyId - для всех элементов с id "MyId"
+        </span>
+        </span>
+    <p><strong>Свойство</strong>  - ключевое слово указывающие "что" конкретно стилизовать в элементе <br>
+        <br>
+        <strong>пример:</strong><br>
+        color - свойство отвечающие за цвет текста<br>
+        font-size - размер текста<br>
+        <br>
+        всем параграфам цвет текста установить красный цвет<br>
+
+            <div><blockquote>p {<br>
+                 color: red;<br>
+                }</blockquote>
+            </div>
+    <p><strong> Установка значения свойства color: </strong></p>
+    <span>
+    <ol>
+        <li>Словом (red, green, blue, yellow...)</li>
+        <li>в RGB формате: rgb(/*значение красного*/, /*значение зеленого*/, /*значение синего*/)</li>
+        <li>HEX: #FFFFFF</li>
+            <ol>
+                <li>Работает также как и RGB, но значения указываются в 16-ричном виде (по два числа) FF - красного, FF - зеленого, FF синего. Так как установлены максимальные значения для каждого из 3-х цветов - #FFFFFF - черный цвет (более подробно этот момент разберем в следующем уроке) </li>
+            </ol>
+    </ol>
+    </span>
+
+
+</body>
+</html>
